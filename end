@@ -1,0 +1,29 @@
+[33mcommit 5e657c19474c01bb30867d4b56765b80fec46fb5[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: fatimahnadiaekaputri <fatimahnadiaep@gmail.com>
+Date:   Fri Dec 27 22:51:54 2024 +0700
+
+    fix: gitignore
+
+[33mcommit 1cb816e2cb292f8f6791a96406cbdade001c7f8f[m
+Author: fatimahnadiaekaputri <fatimahnadiaep@gmail.com>
+Date:   Fri Dec 27 22:49:00 2024 +0700
+
+    feat: add firebase config
+
+[33mcommit ecf62130c33fa87e5fbfefc639a2e0e1ed2666d6[m
+Author: fatimahnadiaekaputri <fatimahnadiaep@gmail.com>
+Date:   Fri Dec 27 22:22:12 2024 +0700
+
+    feat: add register view
+
+[33mcommit f8c971e7f8f5b9ece2c10e21f138dc7479f3a320[m
+Author: fatimahnadiaekaputri <fatimahnadiaep@gmail.com>
+Date:   Fri Dec 27 21:43:34 2024 +0700
+
+    fix: login view
+
+[33mcommit 03d175df63d9856dbb339228023498a025d0bc74[m
+Author: fatimahnadiaekaputri <fatimahnadiaep@gmail.com>
+Date:   Fri Dec 27 15:53:21 2024 +0700
+
+    first commit
