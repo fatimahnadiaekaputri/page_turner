@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:page_turner/src/widgets/button.dart';
 import 'package:page_turner/src/widgets/default_scaffold.dart';
 import 'package:page_turner/src/widgets/text_form.dart';
 
@@ -24,8 +25,8 @@ class _LoginState extends State<Login> {
           const SizedBox(height: 30),
           Image.asset(
             'lib/assets/images/girl.png',
-            width: 235,
-            height: 250,
+            width: 188,
+            height: 200,
           ),
           const SizedBox(height: 20),
           Expanded(
@@ -40,7 +41,7 @@ class _LoginState extends State<Login> {
             child: Stack(
               children: [
                 Positioned(
-                    top: 30,
+                    top: 20,
                     left: 0,
                     right: 0,
                     child: Column(
@@ -54,14 +55,45 @@ class _LoginState extends State<Login> {
                             )),
                         const SizedBox(height: 10),
                         TextForm(
-                            label: 'email',
+                            label: 'Email',
                             hintText: 'Masukkan email',
                             validator: (value) {
                               if (value == null || value.isEmpty) {
                                 return 'Masukkan email';
                               }
                               return null;
-                            })
+                            }),
+                        const SizedBox(height: 10),
+                        TextForm(
+                          label: 'Password',
+                          hintText: 'Masukkan password',
+                          validator: (value) {
+                            if (value == null || value.isEmpty) {
+                              return 'Masukkan password';
+                            }
+                            return null;
+                          },
+                          obscureText: true,
+                        ),
+                        const SizedBox(height: 20),
+                        const Button(
+                          buttonText: 'Login',
+                        ),
+                        const SizedBox(height: 20),
+                        RichText(
+                          text: const TextSpan(
+                              text: 'Do not have account? ',
+                              style: TextStyle(color: Color(0xFFF7F7F7)),
+                              children: <TextSpan>[
+                                TextSpan(
+                                    text: 'Register',
+                                    style: TextStyle(
+                                        color: Color(0xFFF7F7F7),
+                                        fontWeight: FontWeight.w800,
+                                        decoration: TextDecoration.underline,
+                                        decorationThickness: 2))
+                              ]),
+                        )
                       ],
                     )),
               ],
