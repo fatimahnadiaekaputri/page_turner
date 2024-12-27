@@ -1,4 +1,6 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/gestures.dart';
+import 'package:flutter/material.dart';
+import 'package:page_turner/src/screens/register.dart';
 import 'package:page_turner/src/widgets/button.dart';
 import 'package:page_turner/src/widgets/default_scaffold.dart';
 import 'package:page_turner/src/widgets/text_form.dart';
@@ -81,17 +83,25 @@ class _LoginState extends State<Login> {
                         ),
                         const SizedBox(height: 20),
                         RichText(
-                          text: const TextSpan(
+                          text: TextSpan(
                               text: 'Do not have account? ',
-                              style: TextStyle(color: Color(0xFFF7F7F7)),
+                              style: const TextStyle(color: Color(0xFFF7F7F7)),
                               children: <TextSpan>[
                                 TextSpan(
                                     text: 'Register',
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                         color: Color(0xFFF7F7F7),
                                         fontWeight: FontWeight.w800,
                                         decoration: TextDecoration.underline,
-                                        decorationThickness: 2))
+                                        decorationThickness: 2),
+                                    recognizer: TapGestureRecognizer()
+                                      ..onTap = () {
+                                        Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) =>
+                                                    const Register()));
+                                      })
                               ]),
                         )
                       ],

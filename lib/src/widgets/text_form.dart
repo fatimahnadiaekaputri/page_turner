@@ -47,7 +47,7 @@ class _TextFormState extends State<TextForm> {
                 fontWeight: FontWeight.w600,
               ),
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: 2),
             TextFormField(
               controller: widget.controller,
               validator: widget.validator,
